@@ -1,0 +1,65 @@
+/*Sakura animation using WebGL. No images are used. The framerate might be slow or the demo might not play at all in some older systems so you can watch this video: http://www.screenr.com/BFZ8. Let me make it clear that I did not make this and just thought is was very cool and wanted to share it.
+*/
+/* 樱花雨 */
+*{
+    padding: 0px;
+    margin: 0px;
+}   
+body {
+    padding:0;
+    margin:0;
+    overflow:hidden;
+	  height: 600px;
+}
+canvas {
+    padding:0;
+    margin:0;
+}
+div.btnbg {
+    position:fixed;
+    left:0;
+    top:0;
+    box-shadow: 0px 0px 15px #ccc;
+}
+div.btnbg:hover{
+    text-shadow: 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 20px #ccc;
+}
+
+
+
+/* 3D相册 */
+
+.wrap{
+    perspective: 1600px;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+
+}
+#photos{
+    width: 300px;
+    height:300px;
+    margin: 200px auto;
+    transform-style: preserve-3d;
+    transition: all .5s ease;
+    animation: spin 20s linear infinite;
+
+}
+img{
+    width: 250px;
+    height: 300px;
+    margin-bottom: 100px;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+@keyframes spin {
+        from {
+            transform: rotateY(0);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+}
