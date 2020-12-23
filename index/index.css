@@ -47,8 +47,8 @@ div.btnbg:hover{
 
 }
 img{
-    width: 250px;
-    height: 300px;
+    width: 125px;
+    height: 150px;
     margin-bottom: 100px;
     position: absolute;
     border: 1px solid gray;
@@ -62,4 +62,23 @@ img{
         to {
             transform: rotateY(360deg);
         }
+}
+
+
+/* 计时 */
+.timer{
+    width: 100%;
+    position: fixed;
+    top: 20px;
+    text-align: center;
+}
+
+.timer div{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.timer div span{
+    color: #ff4d4d;
 }
